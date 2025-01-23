@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureProgramming", "StructureProgramming\StructureProgramming.csproj", "{73402237-8A30-42BD-BB46-720A95C76DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOrientedProgramming", "ObjectOrientedProgramming\ObjectOrientedProgramming.csproj", "{1A745FEA-2A65-41D3-AE1C-783A48E92DB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{73402237-8A30-42BD-BB46-720A95C76DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73402237-8A30-42BD-BB46-720A95C76DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73402237-8A30-42BD-BB46-720A95C76DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A745FEA-2A65-41D3-AE1C-783A48E92DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A745FEA-2A65-41D3-AE1C-783A48E92DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A745FEA-2A65-41D3-AE1C-783A48E92DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A745FEA-2A65-41D3-AE1C-783A48E92DB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
