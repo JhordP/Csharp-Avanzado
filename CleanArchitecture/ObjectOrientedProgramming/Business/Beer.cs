@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedProgramming.Business
 {
-    class Beer
+    public class Beer
     {
-        private decimal _alcohol;
-        public string Name { get; set; }
+        private decimal _alcohol; //Practica estandar: Si es privado, el campo debe tener un guion bajo, de lo contrario no.
+        public string Name { get; set; } //Practica estandar: Las propiedades inician con mayuscula
         public decimal Price { get; set; }
-        public decimal Alcohol
+        public decimal Alcohol //Propiedad creada para manejar la variable privada
         {
             get { return _alcohol; }
             set
@@ -27,7 +27,7 @@ namespace ObjectOrientedProgramming.Business
         //Se puede modificar la manera en la que se adquiere la info
         public string sAlcohol { get { return $"Alcohol: {_alcohol.ToString()}"; } } //De esta manera no se puede modificiar esta propiedad, solo obtener
 
-        //Metodo constructor
+        //Metodo constructor obligando a pasarle los parametros necesarios correspondientes
         public Beer(string name, decimal price, decimal alcohol)
         {
             this.Name = name;
