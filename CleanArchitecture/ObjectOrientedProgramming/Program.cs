@@ -4,8 +4,14 @@ using System.Xml.Linq;
 
 
 
-var delirium = new ExpiringBeer("Delirium", 100, 8, new DateTime(2025, 12, 28));
+var delirium = new ExpiringBeer("Delirium", 100, 8, new DateTime(2025, 12, 28), 350);
 Console.WriteLine(delirium.GetInfo());
+Console.WriteLine(delirium.GetInfo(Console.ReadLine())); //Se coloca como mensaje lo que el usuario coloque en teclado :P
+
+Drink bebida = new Beer("Erdinger", 225, 7.5m, 450); 
+//La clase drink al ser abstracta no se puede crear un objeto tipo drink. Lo que si se puede es crear un objeto hijo del tipo Drink.
+
+
 
 #region Codigo(Antes del NameSpace Business)
 

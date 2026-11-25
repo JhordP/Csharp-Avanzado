@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedProgramming.Business
 {
-    public class Beer
+    public class Beer : Drink
     {
+        private const string Category = "Cerveza";
+
         private decimal _alcohol; //Practica estandar: Si es privado, el campo debe tener un guion bajo, de lo contrario no.
         public string Name { get; set; } //Practica estandar: Las propiedades inician con mayuscula
         public decimal Price { get; set; }
@@ -28,16 +30,30 @@ namespace ObjectOrientedProgramming.Business
         public string sAlcohol { get { return $"Alcohol: {_alcohol.ToString()}"; } } //De esta manera no se puede modificiar esta propiedad, solo obtener
 
         //Metodo constructor obligando a pasarle los parametros necesarios correspondientes
-        public Beer(string name, decimal price, decimal alcohol)
+        public Beer(string name, decimal price, decimal alcohol, int quantity) : base (quantity)
         {
             this.Name = name;
             this.Price = price;
             this.Alcohol = alcohol;
         }
 
-        public string GetInfo()
+        public virtual string GetInfo() //Virtual permite la sobreescritura del metodo desde las clases hijas
         {
             return $"Nombre: {Name}, Precio: {Price}, Alcohol: {Alcohol}%";
         }
+
+        //Sobrecarga de metodos
+        public string GetInfo(string message)
+        {
+            return $"{message} {GetInfo()}";
+        }
+
+        public string GetInfo(int number)
+        {
+            return $"{number}.- {GetInfo()}";
+        }
+
+        public override string GetCategory() => Category; //Metodo implementado de la clase abstracta que solo la define.
+        
     }
 }
